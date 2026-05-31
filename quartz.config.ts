@@ -13,19 +13,23 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "plausible",
+      provider: "clarity",
+      projectId: "wzmrblcv4s",
     },
     locale: "ko-KR",  // "en-US" for English (United States), "ko-KR" for Korean (South Korea).
-    baseUrl: "quartz.jzhao.xyz",
+    baseUrl: "jyyun1209.github.io",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        header: "Gowun Dodum",
+        body: "Noto Sans KR",
+        code: "JetBrains Mono",
+        //header: "Schibsted Grotesk",
+        //body: "Source Sans Pro",
+        //code: "IBM Plex Mono",
       },
       colors: {
         lightMode: {
