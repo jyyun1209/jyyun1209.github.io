@@ -220,6 +220,12 @@ li:has(> .folder-outer:not(.open)) > .folder-container > svg {
   color: var(--tertiary);
 }
 
+// hide the dropdown chevron for folders with no child pages
+// (e.g. a folder that only contains an index.md + images = a single post)
+.folder-container:has(+ .folder-outer > ul:empty) .folder-icon {
+  display: none;
+}
+
 .explorer {
   @media all and ($mobile) {
     &.collapsed {
