@@ -1,7 +1,7 @@
 ---
 base: "[[포스팅 관리.base]]"
 title: 전문연구요원, 전역 직전에 전직 가능할까?
-status: 🟢 Draft
+status: Published
 게시 예정일: 2026-06-07
 publish_date: 2026-06-09
 tags:
