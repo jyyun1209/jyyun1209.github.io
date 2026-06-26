@@ -1,8 +1,8 @@
----
+﻿---
 title: Welcome
 base: "[[포스팅 관리.base]]"
 status: 📦 Published
-publish_date: 2026-05-29
+published: 2026-05-29
 ---
 
 배웠지만 그 목적을 정확하게 알지 못한 채 문제만 풀었거나,

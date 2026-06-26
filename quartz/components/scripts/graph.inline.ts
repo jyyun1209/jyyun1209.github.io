@@ -143,6 +143,20 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     if (showTags) tags.forEach((tag) => neighbourhood.add(tag))
   }
 
+  // Include all tags of discovered notes so related notes' full context is visible
+  if (showTags) {
+    for (const nodeId of [...neighbourhood]) {
+      if (!nodeId.startsWith("tags/")) {
+        const nodeTags = (data.get(nodeId)?.tags ?? [])
+          .filter((tag) => !removeTags.includes(tag))
+          .map((tag) => simplifySlug(("tags/" + tag) as FullSlug))
+        for (const tagSlug of nodeTags) {
+          neighbourhood.add(tagSlug)
+        }
+      }
+    }
+  }
+
   const nodes = [...neighbourhood].map((url) => {
     const text = url.startsWith("tags/") ? "#" + url.substring(5) : (data.get(url)?.title ?? url)
     return {
