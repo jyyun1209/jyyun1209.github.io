@@ -1,7 +1,7 @@
 ﻿---
 title: "[Vision-Flow] 1. 컴퓨터 비전이란 무엇인가"
 status: Draft
-published: 2026-02-01
+published: 2026-06-27
 tags:
   - Vision-Flow
   - Computer Vision
@@ -9,7 +9,7 @@ tags:
 source: https://jyyun1209.tistory.com/33
 ---
 # Intro.
-인간은 새를 보며 비행기를 꿈꾸고, 스스로의 한계를 넘어선 존재를 갈망하며 휴머노이드 로봇을 상상해 왔습니다. **자연이 수억 년에 걸쳐 완성한 기능을 기계로 재현하려는 집념**은, 이제 재현을 넘어 압도적인 효율과 성능을 향해 나아가고 있습니다. 올해 초 세계의 이목을 집중시키고, 현대차 주식을 뜨겁게 달군 현대자동차그룹의 '아틀라스' 또한 인간의 움직임을 똑같이 재현하는 것이 아니라, 장점만을 취한 후, 더 효율적인 움직임을 가질 수 있도록 연구했다고 하죠.
+인간은 새를 보며 비행기를 꿈꾸고, 스스로의 한계를 넘어선 존재를 갈망하며 휴머노이드 로봇을 상상해 왔습니다. **==자연이 수억 년에 걸쳐 완성한 기능을 기계로 재현하려는 집념==** 은, 이제 재현을 넘어 압도적인 효율과 성능을 향해 나아가고 있습니다. 올해 초 세계의 이목을 집중시키고, 현대차 주식을 뜨겁게 달군 현대자동차그룹의 '아틀라스' 또한 인간의 움직임을 똑같이 재현하는 것이 아니라, 장점만을 취한 후, 더 효율적인 움직임을 가질 수 있도록 연구했다고 하죠.
 
 <iframe width="100%" style="aspect-ratio: 16/9;" src="https://www.youtube.com/embed/_4evEt0dgLc" frameborder="0" allowfullscreen></iframe>
 
@@ -17,7 +17,7 @@ source: https://jyyun1209.tistory.com/33
 
 이러한 관점에서, 인간은 '걷는다', '난다'와 같은 행동뿐 아니라, 사람처럼 '**생각**'하고, '**판단**'하는 것에도 관심을 가져왔습니다. 그리고 여기서 한 가지 본질적인 질문에 마주하게 됩니다.
 
-**"무언가를 판단하기 위해, 우리는 가장 먼저 무엇을 하는가?"**
+> [!quote] **무언가를 판단하기 위해, 우리는 가장 먼저 무엇을 하는가?**
 
 질문에 대한 답은 명확합니다. 우리는 먼저 감각(**Sense**) 합니다. 오감을 통해 세상의 정보를 수집하고, 이를 바탕으로 생각하죠. 기계에서 이런 정보를 수집하기 위한 시도는 자연스럽게 인간의 **감각 기관을 모방**하는 것에서 출발했고, 우리는 이를 센서(**Sensor**)라고 부릅니다. 
 
@@ -43,7 +43,7 @@ source: https://jyyun1209.tistory.com/33
 하지만 여기서 거대한 장벽을 마주합니다. 사람은 사진을 보고 직관적으로 '고양이'라고 느끼지만, 컴퓨터에게 이 사진은 그저 0부터 255 사이 숫자의 나열일 뿐입니다. 이런 '숫자 정보'와 '사람의 해석' 사이의 간극을 **'의미론적 차이 (Semantic Gap)'이라고** 합니다.
 
 ![[Computer Vision/Vision-Flow/1-컴퓨터-비전이란-무엇인가/image-2.png]]
-*▲ 사람이 보는 이미지와 컴퓨터가 보는 이미지 (색이 있는 픽셀 안에 숫자가 적혀있지만, 이것은 이해를 돕기 위한 것일 뿐, 컴퓨터는 단순히 \[178, 189, 175, 161, 139, ...\] 이런 식으로 받아들입니다.)*
+*▲ 사람이 보는 이미지와 컴퓨터가 보는 이미지 (색이 있는 픽셀 안에 숫자가 적혀있지만, 이것은 이해를 돕기 위한 것일 뿐, 컴퓨터는 단순히 [178, 189, 175, 161, 139, ...] 이런 식으로 받아들입니다.)*
 
 컴퓨터라는 것이 상용화되기도 전, 당시의 공학자들은 지금처럼 강력한 GPU나 딥러닝 모델 없이, 오로지 **수학**과 **통계**, 그리고 **기하학적 알고리즘**만으로 이 문제들을 풀어왔습니다. 즉, 사람의 해석을 수학적으로 번역해서 컴퓨터에게 알려주고, 컴퓨터는 해당 수식들을 계산하는 방식인 겁니다. 그 기술들을 우리는 알게 모르게 사용해 왔는데, 간단한 예시들을 통해 그 아이디어를 조금만 더 구체화 해보도록 하겠습니다.
 
@@ -92,7 +92,7 @@ CCTV는 과거부터 보안 및 감시 장치로써의 역할을 해왔습니다
 # 마무리
 인문학, 사회학, 수학 등 분야를 막론하고 세상의 어떤 문제도 한 번에 완벽하게 해결되기는 어렵습니다. 많은 문제는 수많은 시도, 실패와 개선을 통해 해결돼 왔고, 그럼에도 해결되지 않은 문제도 많습니다. 앞서 예시로써 설명드린 단순한 수학적 방법들 또한 문제 해결의 시작이 되고, 개선되면서 점점 더 복잡한 수학적 모델로 진화해 왔습니다. 하지만 현실의 문제는 생각보다 훨씬 복잡했습니다. 얼굴 찾기 알고리즘은 정면 얼굴은 기가 막히게 찾았지만, 고개를 조금만 돌리거나 표정을 찡그리면 찾지 못했습니다. **사람이 일일이 규칙을 정해주는 방식에는 한계가 명확**했던 것입니다. 그래서 공학자들은 다시 근본적인 질문으로 돌아갔습니다.
 
-**"그러면 인간은 도대체 어떻게 보는가?"**
+>[!quote] **그러면 인간은 도대체 어떻게 보는가?**
 
 우리는 눈이 코보다 수치적으로 얼마나 어두운지 계산하며 보지 않습니다. 수많은 경험을 통해 그냥 **'보면 아는'** 것이죠. '보면 안다'라는 게 무엇일까요? 우리는 대상의 픽셀 하나하나를 외우거나, 계산하는 것이 아니라, 전체적인 형태, 질감, 주요한 특징들의 배치와 같은 **'추상적인 특징(Feature)'**을 인식합니다.
 
@@ -101,7 +101,7 @@ CCTV는 과거부터 보안 및 감시 장치로써의 역할을 해왔습니다
 
 위 사진처럼 형체를 알아보기 힘든 저화질의 이미지일지라도, 여러분은 아마 쉽게 '강아지' 사진임을 유추하실 수 있을 겁니다. 픽셀 정보는 뭉개져서 엉망이지만, 우리 뇌 속에 있는 '강아지의 특징'과 대조해 봤을 때, 실루엣이나 자세가 강아지와 유사하기 때문입니다. 혹시 여기서 떠오르는 '강아지의 특징'을 한 번 나열해 보시겠어요? 아마 **말로 설명하기 어려운 그 '느낌'**이 들 텐데, 그건 뭘까요? 그리고 컴퓨터가 이런 '느낌'을 알 수 있다면 사람처럼 판단할 수 있지 않을까요?
 
-하지만 말이 쉽죠.. 컴퓨터가 어떻게 그 '느낌'을 알겠습니까? 여기서 제가 서두에 언급한 **'자연을 모방하고자 하는 인간의 집념'**이 또 한 번 등장합니다. 우리가 말로 설명하기 힘든 그 복잡한 '특징(Feature)'을 수학 공식으로 억지로 정의하는 대신, 그 특징을 느끼고 학습하는 인간의 뇌 구조 자체를 모방해 보기로 한 것입니다.
+하지만 말이 쉽죠.. 컴퓨터가 어떻게 그 '느낌'을 알겠습니까? 여기서 제가 서두에 언급한 **=='자연을 모방하고자 하는 인간의 집념'==** 이 또 한 번 등장합니다. 우리가 말로 설명하기 힘든 그 복잡한 '특징(Feature)'을 수학 공식으로 억지로 정의하는 대신, 그 특징을 느끼고 학습하는 인간의 뇌 구조 자체를 모방해 보기로 한 것입니다.
 
 마치 어린아이가 수많은 경험을 통해 스스로 세상을 배우듯, 컴퓨터에게도 수많은 데이터를 보여주고 스스로 특징을 찾아내어 학습할 수 있는 '인공 뇌'를 만들어주는 것입니다. 이것이 바로 **'인공 신경망 (Artificial Neural Network)'**의 시작입니다.
 
@@ -112,13 +112,13 @@ CCTV는 과거부터 보안 및 감시 장치로써의 역할을 해왔습니다
 * * *
 
 # 참고 자료
-\[1\] [https://youtu.be/\_4evEt0dgLc?si=RjFYcX1k\_rTKVFDX](https://youtu.be/_4evEt0dgLc?si=RjFYcX1k_rTKVFDX)   
-\[2\] [https://sports.donga.com/it/article/all/20110214/34804574/1](https://sports.donga.com/it/article/all/20110214/34804574/1)\[3\] [https://medium.com/analytics-vidhya/haar-cascades-explained-38210e57970d](https://medium.com/analytics-vidhya/haar-cascades-explained-38210e57970d)  
-\[4\] [https://www.cctvsg.net/how-does-motion-detection-camera-work/](https://www.cctvsg.net/how-does-motion-detection-camera-work/)  
-\[5\] Zhang, Erhu & Zhao, Yongwei & Xiong, Wei. (2010). Active energy image plus 2DLPP for gait recognition. Signal Processing. 90. 2295-2302. 10.1016/j.sigpro.2010.01.024.  
-\[6\] [https://en.wikipedia.org/wiki/Russell\_Kirsch](https://en.wikipedia.org/wiki/Russell_Kirsch)  
-\[7\] [https://en.wikipedia.org/wiki/Haar-like\_feature](https://en.wikipedia.org/wiki/Haar-like_feature)  
-\[8\] [https://en.wikipedia.org/wiki/Viola%E2%80%93Jones\_object\_detection\_framework](https://en.wikipedia.org/wiki/Viola%E2%80%93Jones_object_detection_framework)  
-\[9\] P. Viola and M. Jones, "Rapid object detection using a boosted cascade of simple features," Proceedings of the 2001 IEEE Computer Society Conference on Computer Vision and Pattern Recognition. CVPR 2001, Kauai, HI, USA, 2001, pp. I-I, doi: 10.1109/CVPR.2001.990517.  
-\[10\] [https://en.wikipedia.org/wiki/Moving\_object\_detection](https://en.wikipedia.org/wiki/Moving_object_detection)  
-\[11\] [https://en.wikipedia.org/wiki/Foreground\_detection](https://en.wikipedia.org/wiki/Foreground_detection)
+[1] [https://youtu.be/\_4evEt0dgLc?si=RjFYcX1k\_rTKVFDX](https://youtu.be/_4evEt0dgLc?si=RjFYcX1k_rTKVFDX)   
+[2] [https://sports.donga.com/it/article/all/20110214/34804574/1](https://sports.donga.com/it/article/all/20110214/34804574/1)[3] [https://medium.com/analytics-vidhya/haar-cascades-explained-38210e57970d](https://medium.com/analytics-vidhya/haar-cascades-explained-38210e57970d)  
+[4] [https://www.cctvsg.net/how-does-motion-detection-camera-work/](https://www.cctvsg.net/how-does-motion-detection-camera-work/)  
+[5] Zhang, Erhu & Zhao, Yongwei & Xiong, Wei. (2010). Active energy image plus 2DLPP for gait recognition. Signal Processing. 90. 2295-2302. 10.1016/j.sigpro.2010.01.024.  
+[6] [https://en.wikipedia.org/wiki/Russell\_Kirsch](https://en.wikipedia.org/wiki/Russell_Kirsch)  
+[7] [https://en.wikipedia.org/wiki/Haar-like\_feature](https://en.wikipedia.org/wiki/Haar-like_feature)  
+[8] [https://en.wikipedia.org/wiki/Viola%E2%80%93Jones\_object\_detection\_framework](https://en.wikipedia.org/wiki/Viola%E2%80%93Jones_object_detection_framework)  
+[9] P. Viola and M. Jones, "Rapid object detection using a boosted cascade of simple features," Proceedings of the 2001 IEEE Computer Society Conference on Computer Vision and Pattern Recognition. CVPR 2001, Kauai, HI, USA, 2001, pp. I-I, doi: 10.1109/CVPR.2001.990517.  
+[10] [https://en.wikipedia.org/wiki/Moving\_object\_detection](https://en.wikipedia.org/wiki/Moving_object_detection)  
+[11] [https://en.wikipedia.org/wiki/Foreground\_detection](https://en.wikipedia.org/wiki/Foreground_detection)
