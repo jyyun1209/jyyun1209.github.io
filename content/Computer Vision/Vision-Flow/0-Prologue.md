@@ -17,19 +17,19 @@ source: https://jyyun1209.tistory.com/31
 * * *
 
 # 변화 1: Hugging Face
-![[Computer Vision/Vision-Flow/0-Prologue/image-1.png]]
+![[Computer Vision/Vision-Flow/0-Prologue.assets/image-1.png]]
 *▲ Papers with Code 서비스 중단..?*
 
 최신 동향을 확인하기 위해 가장 먼저 했던 일은 항상 그래왔듯 <span style="color:#E74C3C;">**Papers with Code**</span>에 들어가는 것이었습니다. 어떤 Task들이 학계의 가장 큰 관심 대상이고, 어떤 모델들이 벤치마크에서 상위를 차지하고 있는지 빠르게 훑어볼 수 있으니까요. 그런데 서비스가 중단되었다고 뜨더라고요. 연구에 뒤처질 것은 예상했지만, 이건 뭔가 세대 차이가 나는 느낌이랄까요ㅠㅠ 빠르게 변화하는 현대 사회를 이렇게 또 느끼게 되었네요 ㅎㅎ
 
 아무튼 몇몇 글들을 찾아보니 Papers with Code는 서비스가 종료되고, <span style="color: #E74C3C;">**Hugging Face**</span>라는 웹 사이트가 그 역할을 물려받게 되었다는 것을 알게 되었습니다. 개인적으로 느끼기에 Papers with Code에 비해 다소 복잡하다고 느껴지는 건 아마 적응의 시간이 필요한 거겠죠..?
 
-![[Computer Vision/Vision-Flow/0-Prologue/image-2.png]]
+![[Computer Vision/Vision-Flow/0-Prologue.assets/image-2.png]]
 *▲ Hugging Face > Models 탭*
 
 Hugging Face 홈페이지 구경을 조금 해봤는데, Papers with Code보다 넓은 분야의 모델들을 더 쉽게 공유할 수 있는 게 장점인 것처럼 보였습니다. 뭔가 Git 레포지토리를 찾는 것과 비슷한 느낌이었습니다. 그리고 이 화면에서 원하는 Task를 선택한 후, Trending이나 Most Likes를 기준으로 정렬하면 해당 Task에서 인기가 많은 모델들을 확인할 수 있었습니다. 하지만 이전에 Papers with Code와 같이 벤치마크를 통해 직관적으로 보기는 어려운 것 같습니다. 모델을 하나 선택해서 들어가면 성능을 확인할 수 있는 경우도 있지만 그렇지 않은 경우도 있고, 어떤 하나의 기준으로 순위를 나열해 놓은 게 아니라서 한눈에 안 들어오네요.. 적응이 되면 괜찮아지겠죠??
 
-![[Computer Vision/Vision-Flow/0-Prologue/image-3.png]]
+![[Computer Vision/Vision-Flow/0-Prologue.assets/image-3.png]]
 *▲ Hugging Face > Community > Learn*
 
 그럼에도 한 가지 마음에 들었던 부분은 <span style="color: #E74C3C;">**Learn**</span>이라는 페이지였습니다. 이 페이지에서는 컴퓨터 비전, 로보틱스, 강화학습 등 다양한 분야에 대한 자료가 있었습니다. 전문가 분들이 챕터를 나눠 담당해서 그런지, 생각보다 깊이 있고 질 좋은 내용들을 접할 수 있었습니다. 컴퓨터 비전과 3D를 위한 머신러닝이라는 코스가 있던데, 저의 [Vision-Flow] 시리즈를 작성할 때에도 많이 참고해야 할 것 같습니다 ㅎㅎ
@@ -40,15 +40,15 @@ Hugging Face 홈페이지 구경을 조금 해봤는데, Papers with Code보다 
 세상에는 수많은 훌륭한 학회들이 있지만 현실적으로 모두 확인할 수는 없으니..! 컴퓨터 비전 분야에서 <span style="color: #E74C3C;">**Top-Tier**</span> 학회라고 알려진 **CVPR, ICCV, ECCV, SIGGRAPH**의 Best Paper로 선정된 연구들 정도만 빠르게 확인해 보았습니다.  
 (맨 아래 참고 자료에 보시면 링크 있습니다. **ICLR, ICML, NeurIPS**도 링크 걸어뒀습니다!)
 
-![[Computer Vision/Vision-Flow/0-Prologue/image-4.png]]
+![[Computer Vision/Vision-Flow/0-Prologue.assets/image-4.png]]
 *▲ CVPR 2025 Best Paper (VGGT: Visual Geometry Grounded Transformer)*
 
-![[Computer Vision/Vision-Flow/0-Prologue/image-5.png]]
+![[Computer Vision/Vision-Flow/0-Prologue.assets/image-5.png]]
 *▲ CVPR 2025 Honorable Mentsions; Yann LeCun 아저씨는 아직도 활발하시네요 (찾아보니 65세이시던데 대단한 것 같습니다..)*
 
 CVPR 2025 수상 연구들을 둘러보다가 반가운 이름을 발견했습니다. <span style="color: #E74C3C;">**Yann LeCun**</span> 교수님은 현재 뉴욕 대학교 교수이자 AMI Labs라는 회사를 설립하여 CEO로 계신다고 하네요. Meta에서 수석 AI 과학자 부사장으로 계시다 최근에 창업을 하신 걸로 보입니다. 컴퓨터 관련 전공자라면 누구나 들어보셨을 것 같은데요, 컴퓨터 비전 분야의 선구자라고 불리면서 그 공로를 인정받아 2018년에 튜링상을 수상하신 분입니다. 아마 제 계획이 크게 틀어지지 않는 이상 조만간 이 분이 왜 컴퓨터 비전의 선구자라고 불렸는지에 대해 소개하게 될 것 같습니다. 이번 CVPR 2025에서 Honorable Mention으로 선정된 논문 역시 아주 흥미로운 주제였는데요, 이 역시 다음번에 소개할 기회가 있으면 좋겠네요.
 
-![[Computer Vision/Vision-Flow/0-Prologue/image-6.png]]
+![[Computer Vision/Vision-Flow/0-Prologue.assets/image-6.png]]
 *▲ ICCV Best Paper Awards*
 
 2023년도까지만 해도 Top-Tier 학회에 쏟아지는 대부분의 논문들이 2D Task였고, 그러다 보니 Best Paper도 2D Task에 관한 연구들이 싹쓸이하는 분위기였는데, 2024년 이후부터 Best Paper 목록에 3D Task가 하나 둘 등장하는 걸 보니 확실히 이전에 비해 3D 환경을 이해하기 위한 연구들이 활발해진 것 같습니다. 부족하지만 제 관점에서 최신 동향을 요약하자면,

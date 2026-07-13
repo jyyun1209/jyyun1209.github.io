@@ -81,3 +81,11 @@
     }
   }
 }
+
+// ── 좌측 Explorer ────────────────────────────────
+// 게시글(파일) 링크가 body 기본 1rem을 상속해 폴더명(0.95rem)보다 크게 보이므로
+// 폴더명보다 한 단계 작게 맞춘다.
+.explorer-content ul li > a {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
