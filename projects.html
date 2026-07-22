@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/style.css" />
+  <script src="assets/lang.js"></script>
 </head>
 <body>
   <nav class="topnav">
@@ -18,6 +19,7 @@
       <a href="index.html">About</a>
       <a href="projects.html" class="active">Projects</a>
       <a href="/blog/">Blog</a>
+      <button type="button" class="langtoggle" aria-label="Switch to English">EN</button>
     </div>
   </nav>
 
@@ -25,40 +27,63 @@
     <h1>Projects</h1>
     <div class="cards">
       <div class="card">
-        <h3>산업용 구조광 3D 스캐너</h3>
+        <h3><span class="lang-ko">산업용 구조광 3D 스캐너</span><span class="lang-en">Industrial Structured-Light 3D Scanner</span></h3>
         <span class="tag">3D Reconstruction</span><span class="tag">CUDA</span><span class="tag">C++</span>
-        <p>
+        <p class="lang-ko">
           Stereo Camera-Projector 기반 Structured-Light 3D Reconstruction 연구부터
           제품화까지 전 과정을 주도. 실제 판매 달성 및 복수 기업과 PoC 진행 중.
+        </p>
+        <p class="lang-en">
+          Led the full pipeline — from Stereo Camera-Projector-based structured-light 3D
+          reconstruction research to productization. Achieved an actual sale and running PoCs with
+          multiple companies.
         </p>
       </div>
       <div class="card">
         <h3>LOIC: LiDAR Object Focused Image Classification</h3>
         <span class="tag">3D Object Detection</span><span class="tag">Sensor Fusion</span>
-        <p>
+        <p class="lang-ko">
           LiDAR와 카메라를 융합하여 3D 객체 탐지 성능을 개선하는 석사 학위 논문 연구.
+        </p>
+        <p class="lang-en">
+          Master's thesis research fusing LiDAR and camera data to improve 3D object detection
+          performance.
         </p>
       </div>
       <div class="card">
         <h3>Driving Behavior Classification (V2X)</h3>
         <span class="tag">CNN-LSTM</span><span class="tag">Publication</span>
-        <p>
+        <p class="lang-ko">
           CNN-LSTM과 V2X 통신을 활용한 주행 행동 분류 및 공유 시스템.
           <em>Applied Sciences</em> (2021) 게재.
         </p>
+        <p class="lang-en">
+          A driving-behavior classification and sharing system using CNN-LSTM and V2X communication.
+          Published in <em>Applied Sciences</em> (2021).
+        </p>
       </div>
       <div class="card">
-        <h3>캠퍼스 자율주행 (UGRP)</h3>
+        <h3><span class="lang-ko">캠퍼스 자율주행 (UGRP)</span><span class="lang-en">Campus Autonomous Driving (UGRP)</span></h3>
         <span class="tag">Autonomous Driving</span><span class="tag">ROS</span>
-        <p>
+        <p class="lang-ko">
           오픈 플랫폼을 활용해 캠퍼스 내 자율주행 미션에 도전한 학부 그룹 연구 프로그램.
+        </p>
+        <p class="lang-en">
+          An undergraduate group research program taking on a campus autonomous-driving mission
+          using an open platform.
         </p>
       </div>
     </div>
   </div>
 
   <footer>
-    <p>© 2026 Junyoung Yun · <a href="/blog/">Blog</a></p>
+    <div class="footer-links">
+      <a href="mailto:jyyun1209@gmail.com">Email</a>
+      <a href="https://github.com/jyyun1209" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/jyyun1209/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="/blog/">Blog</a>
+    </div>
+    <p>© 2026 Junyoung Yun</p>
   </footer>
 </body>
 </html>
