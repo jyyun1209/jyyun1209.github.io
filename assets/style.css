@@ -243,6 +243,10 @@ main .block p + p {
   max-width: 84%;
 }
 
+.entry .logo img.dgist {
+  max-width: 82%;
+}
+
 .entry .head {
   display: flex;
   align-items: baseline;
