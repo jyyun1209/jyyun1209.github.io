@@ -361,6 +361,33 @@ main .block p + p {
   margin-bottom: 1.2rem;
 }
 
+/* ── 준비 중(Coming Soon) ────────────────────────── */
+.coming-soon {
+  text-align: center;
+  padding: 5rem 1rem 6rem;
+}
+
+.coming-soon .cs-emoji {
+  font-size: 3.2rem;
+  line-height: 1;
+  margin-bottom: 1.2rem;
+}
+
+.coming-soon h1 {
+  font-size: 1.7rem;
+  color: var(--navy);
+  margin-bottom: 0.7rem;
+}
+
+.coming-soon p {
+  color: var(--muted);
+  margin-bottom: 1.8rem;
+}
+
+.coming-soon .cs-back {
+  font-weight: 500;
+}
+
 /* ── 푸터 ────────────────────────────────────────── */
 footer {
   text-align: center;
