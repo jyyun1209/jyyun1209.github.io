@@ -18,6 +18,9 @@
 
 html {
   scroll-behavior: smooth;
+  /* iOS 가로 모드에서 글자가 임의로 커지는 것을 막는다 */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -46,6 +49,7 @@ a:hover {
   justify-content: space-between;
   padding: 0.8rem clamp(1rem, 5vw, 3rem);
   background: rgba(255, 255, 255, 0.92);
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--line);
 }
@@ -289,13 +293,6 @@ main .block p + p {
   color: var(--muted);
 }
 
-@media (max-width: 600px) {
-  .entry {
-    grid-template-columns: 1fr;
-    gap: 0.2rem;
-  }
-}
-
 /* ── 프로젝트 카드 (projects.html) ───────────────── */
 .cards {
   display: grid;
@@ -311,9 +308,12 @@ main .block p + p {
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(31, 58, 95, 0.08);
+/* 터치 기기에서는 탭 후 hover 상태가 남지 않도록 마우스 환경에서만 적용 */
+@media (hover: hover) {
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(31, 58, 95, 0.08);
+  }
 }
 
 .card h3 {
@@ -412,4 +412,104 @@ footer {
 .footer-links a:hover {
   color: var(--navy);
   text-decoration: none;
+}
+
+/* ── 모바일 (≤600px) ─────────────────────────────── */
+@media (max-width: 600px) {
+  /* 한글이 어절 중간에서 끊기지 않도록 */
+  body {
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+
+  /* 네비게이션: 1행 이름 + 언어 버튼, 2행 탭 */
+  .topnav {
+    flex-wrap: wrap;
+    padding: 0.5rem 1rem 0;
+  }
+
+  .topnav .navlinks {
+    display: flex;
+    width: 100%;
+    gap: 1.5rem;
+  }
+
+  .topnav .navlinks a {
+    margin-left: 0;
+    padding: 0.3rem 0 0.4rem;
+    font-size: 0.95rem;
+    border-bottom: 2px solid transparent;
+  }
+
+  .topnav .navlinks a.active {
+    border-bottom-color: var(--navy);
+  }
+
+  .langtoggle {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    margin-left: 0;
+  }
+
+  /* 레이아웃 여백 */
+  .page {
+    margin: 1rem auto 0;
+    gap: 1rem;
+  }
+
+  .profile {
+    padding: 1.6rem 1.4rem;
+  }
+
+  main .block {
+    padding: 1.4rem 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  /* 경력/학력: 로고는 작게 좌측 상단, 기간은 제목 아래 */
+  .entry {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+
+  .entry .logo {
+    justify-content: flex-start;
+    padding-top: 0;
+  }
+
+  .entry .logo img {
+    max-width: 110px;
+    max-height: 40px;
+  }
+
+  .entry .logo img.aivex {
+    max-width: 92px;
+  }
+
+  .entry .logo img.dgist {
+    max-width: 90px;
+  }
+
+  .entry .head {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  /* 프로젝트 카드 */
+  .cards {
+    gap: 1rem;
+  }
+
+  .card {
+    padding: 1.3rem 1.25rem;
+  }
+
+  .coming-soon {
+    padding: 3.5rem 1rem 4rem;
+  }
+
+  footer {
+    padding: 1.5rem 1rem 2.5rem;
+  }
 }
